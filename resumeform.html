@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resumeform</title>
+    <style>
+    /* Reset default margins and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Body background and layout */
+    body {
+        background-color: #f0f4f8; /* Soft light blue */
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Form styling */
+    form {
+        background-color: #fff; /* White form background */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        width: 400px;
+    }
+
+    form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2c3e50;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        width: 48%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-right: 4%;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #3498db;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    button[type="reset"] {
+        background-color: #95a5a6;
+    }
+
+    button[type="reset"]:hover {
+        background-color: #7f8c8d;
+    }
+</style>
+
+</head>
+<body>
+   <form action="resume.php" method="post">
+    <h2>Create Your Resume</h2>
+
+    <!-- Objective -->
+    <label for="Obj">Objective:</label><br>
+    <textarea name="Object" id="Obj" placeholder="Write your career objective..." rows="3" cols="30"></textarea><br><br>
+
+    <!-- Personal Information -->
+    <label for="pinfo">Personal Information:</label><br>
+    <input type="text" name="name" placeholder="Name" id="i1"><br><br>
+    <input type="email" name="email" placeholder="Email" id="i2"><br><br>
+    <input type="text" name="contact" placeholder="Contact Number" id="i3"><br><br>
+
+    <!-- About Me -->
+    <label for="abme">About Me:</label><br>
+    <textarea name="abme" id="abme" placeholder="Write a few lines about yourself..." rows="3" cols="30"></textarea><br><br>
+
+    <!-- Education -->
+    <label>Education:</label><br>
+
+    <!-- Matric -->
+    <strong>Matric:</strong><br>
+    <input type="text" name="MatricGrade" placeholder="Grade" required><br>
+    <input type="text" name="MatricYear" placeholder="Year" required><br><br>
+
+    <!-- Intermediate -->
+    <strong>Intermediate:</strong><br>
+    <input type="text" name="InterGrade" placeholder="Grade" required><br>
+    <input type="text" name="InterYear" placeholder="Year" required><br><br>
+
+    <!-- BS -->
+    <strong>Bachelor's (BS):</strong><br>
+    <input type="text" name="BSGrade" placeholder="Grade" required><br>
+    <input type="text" name="BSYear" placeholder="Year" required><br><br>
+
+    <!-- Experience -->
+    <label for="exp">Experience:</label><br>
+    <input type="text" name="Exp" placeholder="Experience" id="exp"><br><br>
+
+    <!-- Skills -->
+    <label for="Skills">Skills:</label><br>
+    <textarea name="Skills" id="Skills" placeholder="Write your skills..." rows="3" cols="30"></textarea><br><br>
+
+    <!-- Buttons -->
+    <button type="submit">View Your Resume</button>
+    <button type="reset">Reset</button>
+</form>
+
+</body>
+</html>

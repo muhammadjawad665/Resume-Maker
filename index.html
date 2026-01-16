@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Maker</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        body {
+            background-color: white; 
+            color: black;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        nav {
+            background-color: darkblue; 
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav p {
+            color: whitesmoke;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main section */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        main p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+    
+        a.btn {
+            background-color: blue; 
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        a.btn:hover {
+            background-color: skyblue; 
+        }
+
+        
+        footer {
+            background-color: darkblue;
+            color: whitesmoke;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>Resume Maker</p>
+    </nav>
+
+    <main>
+        <p>Click here to Make your Resume</p>
+        <a href="resumeform.html" class="btn" target="_blank">Make Resume</a>
+    </main>
+
+    <footer>
+        <p>© 2026 Resume Maker</p>
+    </footer>
+</body>
+</html>
